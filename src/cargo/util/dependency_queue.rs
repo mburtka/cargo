@@ -160,7 +160,7 @@ impl<N: Hash + Eq + Clone, E: Eq + Hash + Clone, V> DependencyQueue<N, E, V> {
         Some((key, data, priority))
     }
 
-    /// Returns `true` if there are remaining packages to be built.
+    /// Returns `true` if there are no remaining packages to be built.
     pub fn is_empty(&self) -> bool {
         self.dep_map.is_empty()
     }
